@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="ESTILOS/principales.css">
     <link rel="stylesheet" href="ESTILOS/textos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <style>
+        b {
+            cursor: pointer;
+            user-select: all;
+        }
+        #copyMessage {
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="header" id="header" data-aos="flip-left">
@@ -17,6 +27,7 @@
         <a href="PAGINAS SECUNDARIAS/Personajes.html">FIGURAS IMPORTANTES</a>
         <a href="PAGINAS SECUNDARIAS/Impacto_cultural.html">IMPACTO CULTURAL</a>
         <a href="PAGINAS SECUNDARIAS/Impacto_social.html">IMPACTO SOCIAL</a>
+        <a href="PAGINAS SECUNDARIAS/Nosotros.html">Más de nosotros</a>
         <a href="PAGINAS SECUNDARIAS/form.html">DANOS TU OPINIÓN</a>
     </div>
     <br>
@@ -25,7 +36,7 @@
 
     <div class="container">
         <div class="text"data-aos="fade-right" >
-            <h1 style="line-height: 10px;">INTRODUCCIÓN:</h1>
+            <h1 style="line-height: 18px;">INTRODUCCIÓN:</h1>
             <p>
                 A lo largo de la historia, las mujeres ecuatorianas han sido protagonistas de una transformación social, cultural y política que ha redefinido su rol en la sociedad. Desde tiempos ancestrales, donde lideraban comunidades indígenas como guardianas de la tradición y la cosmovisión, hasta convertirse en líderes, profesionales y activistas en el siglo XXI, su evolución ha sido un testimonio de resiliencia, lucha y empoderamiento.
 
@@ -37,19 +48,61 @@
             <img src="IMG/PAGINA PRINCIPAL/SIMBOLO_MUJER.png" alt="Descripción de la imagen">
         </div>
     </div>
-    
-    <footer><br>
-        © Todos los derechos son reservados para: <br>
-        <div style="text-align: left; font-size: 15px; padding-left: 43%">
-                  ○ Sánchez Zambrano Mathias <br>
-        ○ Mosquera Loor Alisson  
+
+    <br><br><br>
+            <div class="container4">
+<div class="text4"> 
+    <p style="text-align: center; font-size: 17px; line-height: 10px; ">
+<b>Para más información visite las siguientes páginas:</b></p>
+<ul style="text-align: justify; padding-left: 15%;" id="enlacespie" >
+    <li style="line-height: 18px;"><a href="https://www.cancilleria.gob.ec/brasil/2021/03/08/las-mujeres-en-el-ecuador-y-sus-tematicas-de-estudio/">Las Mujeres en el Ecuador y sus temáticas de estudio
+    </a></li>
+    <li style="line-height: 18px;"><a href="https://blog.solucion24-7.com.ec/mujeres-destacadas-ecuatorianas/">Mujeres destacadas ecuatorianas
+</a></li>
+    <li style="line-height: 18px;"><a href="https://www.elcomercio.com/actualidad/ecuador/10-mujeres-ecuatorianas-marcaron-historia.html">10 mujeres ecuatorianas que marcaron la historia del país</a></li>
+    <li style="line-height: 18px;"><a href="https://www.catalisisec.com/post/mujeres-ecuador">La historia ecuatoriana, una historia de mujeres</a></li>
+    <li style="line-height: 18px;"><a href="https://www.catalisisec.com/post/mujeres-ecuador">La historia ecuatoriana, una historia de mujeres
+    </a></li>
+</ul>
+</div>
+<div class="divider"> <br><br><br><br>.<br><br><br></div>
+<div class="text4">
+    <p style="text-align: center;">
+    <b>UNIDAD EDUCATIVA FISCOMISIONAL “MARÍA AUXILIADORA”</b> <br>
+    CÓDIGO AMIE 08H00366 <br>
+
+    Avenida del Pacífico y Beato Luis Monza, Kilómetro 2.5 <br>
+    Teléfono: 
+    <b onclick="copyText('062766413')">062766413</b> - 
+    <b onclick="copyText('06275196')">06275196</b> <br>
+    </p>
+</div>
         </div>
-<br>
-  
-    </footer >
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+  <script>
+        function copyText(text) {
+            // Crea un campo de texto temporal
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+
+            // Selecciona y copia el texto
+            tempInput.select();
+            document.execCommand('copy');
+
+            // Elimina el campo de texto temporal
+            document.body.removeChild(tempInput);
+
+            // Muestra un mensaje opcional
+            alert(`Número ${text} copiado al portapapeles.`);
+        }
+    
+</script>
+
       </body>
 </html>

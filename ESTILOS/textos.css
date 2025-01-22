@@ -12,6 +12,7 @@
             margin-right: 20px;
             line-height: 1.8; /* Espaciado entre líneas */
             font-size: 25px;
+            text-align: justify;
             font-family:'Times New Roman';
         }
 
@@ -44,6 +45,7 @@
             margin-right: 20px;
             line-height: 1.8; /* Espaciado entre líneas */
             font-size: 25px;
+            text-align: justify;
             font-family:'Times New Roman';
         }
 
@@ -72,4 +74,42 @@
             padding-right: 30px;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .container4 {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center; /* Centra verticalmente el contenido */
+            justify-content: space-between; /* Asegura espacio entre los elementos */
+            margin: 0 auto;
+        }
+
+        .text4 {
+            flex: 1; /* El texto ocupa 1 parte proporcional del espacio */
+            margin-right: 20px;
+            line-height: 1.8; /* Espaciado entre líneas */
+            font-size: 15px;
+            text-align: center;
+            font-family:'Times New Roman';
+            
+        }
+
+        .divider {
+            flex:0;
+            width: 5px; /* Grosor de la línea */
+            background-color: white; /* Color blanco */
+            height: auto; /* Se ajusta al contenido */
+            color: white;
         }

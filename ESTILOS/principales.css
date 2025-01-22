@@ -72,3 +72,8 @@ footer{
     background-color: #000;
 
 }
+
+#enlacespie a {
+    color: white; /* Color del texto */
+    display: inline-block; /* Para que el padding funcione bien */
+}
